@@ -1,4 +1,4 @@
-cube(`orders`, {
+cube(`Orders`, {
   sql: `
   select 1 as id, 100 as amount, 'new' status
   UNION ALL
@@ -21,7 +21,7 @@ cube(`orders`, {
       type: `count`
     },
 
-    total_amount: {
+    totalAmount: {
       sql: `amount`,
       type: `sum`
     }
